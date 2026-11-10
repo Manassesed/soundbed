@@ -1,0 +1,38 @@
+.app { max-width: 880px; margin: 0 auto; padding: 16px; display: grid; gap: 16px; }
+.top { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand h1 { margin: 0; font-size: 1.5rem; letter-spacing: 0.02em; }
+.logo { color: var(--accent); font-size: 1.6rem; }
+.tag { margin: 0; color: var(--muted); }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
+.panel h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin: 12px 0 8px; }
+.panel h2:first-child { margin-top: 0; }
+.now { display: flex; align-items: center; gap: 12px; }
+.now .label { color: var(--muted); }
+.now strong { flex: 1; font-size: 1.1rem; }
+.stop { background: var(--danger); color: #fff; }
+.key-row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+@media (min-width: 640px) { .key-row { grid-template-columns: repeat(12, 1fr); } }
+.key { aspect-ratio: 1; font-weight: 600; font-size: 1rem; padding: 0; }
+.key.on { background: var(--accent); color: var(--accent-ink); box-shadow: 0 0 18px #f2b54466; }
+.presets { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 8px; }
+.preset { text-align: left; display: grid; gap: 4px; padding: 12px; }
+.preset span { color: var(--muted); font-size: 0.85rem; }
+.preset.on { border-color: var(--accent); }
+.controls { display: grid; gap: 10px; }
+.slider { display: grid; grid-template-columns: 90px 1fr 52px; align-items: center; gap: 12px; }
+.slider input { accent-color: var(--accent); width: 100%; }
+.slider output { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+.row-between { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.muted { color: var(--muted); }
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+.tab.on { background: var(--accent); color: var(--accent-ink); }
+.setlist .name { flex: 1; font-weight: 600; }
+.danger { color: var(--danger); }
+.setlist ol { padding-left: 20px; display: grid; gap: 6px; }
+.setlist li { display: flex; gap: 6px; }
+.song { flex: 1; display: flex; justify-content: space-between; gap: 8px; text-align: left; }
+.song em { color: var(--muted); font-style: normal; }
+.add { display: flex; gap: 8px; flex-wrap: wrap; }
+.add input { flex: 1; min-width: 160px; }
+.foot { text-align: center; color: var(--muted); font-size: 0.85rem; padding-bottom: 24px; }
